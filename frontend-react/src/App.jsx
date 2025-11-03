@@ -9,6 +9,7 @@ import Header from "./components/Header.jsx";
 import Main from "./components/Main.jsx";
 import Footer from "./components/Footer.jsx";
 import AuthProvider from "./AuthProvider.jsx";
+import Dashboard from "./components/dashboard/Dashboard.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                     <Route path='/' element={<Main />}/>
                     <Route path='/register' element={<Register />} />
                     <Route path='/login' element={<Login />} />
+                    <Route path='/dashboard' element={<Dashboard />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
